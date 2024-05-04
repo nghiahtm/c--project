@@ -1,0 +1,143 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutLogin.cshtml";
+}
+@model DoAnTotNghiep.Models.LoginModel
+
+<div class="login-box">
+    <div class="login-logo">
+        <a href="#"><b>Admin</b> NB Garden</a>
+    </div>
+
+    <div class="card">
+        <div class="card-body login-card-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <div class="input-group">
+                            @Html.EditorFor(model => model.userMail, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email" } })
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-envelope"></span>
+                                </div>
+                            </div>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.userMail, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="input-group">
+                            @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control", @placeholder = "Password", @type = "password" } })
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-lock"></span>
+                                </div>
+                            </div>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="icheck-primary">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">
+                                    Remember Me
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block" fdprocessedid="o6faei">Sign In</button>
+                        </div>
+
+                    </div>
+                </form>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .login-box {
+        width: 360px;
+    }
+
+    .login-logo {
+        font-size: 2.1rem;
+        font-weight: 300;
+        margin-bottom: .9rem;
+        text-align: center;
+    }
+
+        .login-logo a {
+            color: #495057;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+    .card {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 0 solid rgba(0, 0, 0, .125);
+        border-radius: .25rem;
+    }
+
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding: 1.25rem;
+    }
+
+    .login-card-body, .register-card-body {
+        background-color: #fff;
+        border-top: 0;
+        color: #666;
+        padding: 20px;
+    }
+
+    .login-box-msg {
+        margin: 0;
+        padding: 0 20px 20px;
+        text-align: center;
+    }
+
+    .input-group {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        width: 100%;     
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        box-shadow: inset 0 0 0 transparent;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+</style>

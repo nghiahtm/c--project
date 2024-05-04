@@ -1,0 +1,9 @@
+﻿
+@using DoAnTotNghiep.Models
+@model List<CategoryPost>
+@foreach (var item in Model)
+{
+    <li><a href="@Url.Action("PostByCategory", "Product", new { ID_CategoryP = item.ID_CategoryP})">@item.CategoryP</a></li>
+}
+
+

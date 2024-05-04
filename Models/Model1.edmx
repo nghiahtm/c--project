@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="QLBanCayCanhModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Cart">
+          <Key>
+            <PropertyRef Name="ID_Cart" />
+          </Key>
+          <Property Name="ID_Cart" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_Product" Type="int" Nullable="false" />
+          <Property Name="ID_User" Type="int" Nullable="false" />
+          <Property Name="Quantity" Type="int" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="ID_Category" />
+          </Key>
+          <Property Name="ID_Category" Type="int" Nullable="false" />
+          <Property Name="Category" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="CategoryPost">
+          <Key>
+            <PropertyRef Name="ID_CategoryP" />
+          </Key>
+          <Property Name="ID_CategoryP" Type="int" Nullable="false" />
+          <Property Name="CategoryP" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'QLBanCayCanh.dbo.Favorite' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Favorite">
+          <Key>
+            <PropertyRef Name="ID_Product" />
+            <PropertyRef Name="ID_User" />
+          </Key>
+          <Property Name="ID_Product" Type="int" Nullable="false" />
+          <Property Name="ID_User" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Order_detail">
+          <Key>
+            <PropertyRef Name="ID_Order_detail" />
+          </Key>
+          <Property Name="ID_Order_detail" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_Order" Type="int" />
+          <Property Name="ID_Product" Type="int" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="Price" Type="float" />
+        </EntityType>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="ID_Order" />
+          </Key>
+          <Property Name="ID_Order" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_User" Type="int" />
+          <Property Name="Total_money" Type="float" />
+          <Property Name="payment_method" Type="text" />
+          <Property Name="Shipping_fee" Type="float" />
+          <Property Name="Status_" Type="text" />
+          <Property Name="Payment_Status" Type="text" />
+          <Property Name="Date_Payment" Type="date" />
+        </EntityType>
+        <EntityType Name="Post">
+          <Key>
+            <PropertyRef Name="ID_Post" />
+          </Key>
+          <Property Name="ID_Post" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Post_Name" Type="text" />
+          <Property Name="Post_Summary" Type="text" />
+          <Property Name="Content" Type="text" />
+          <Property Name="Post_image" Type="char" MaxLength="50" />
+          <Property Name="Date_post" Type="date" />
+          <Property Name="ID_CategoryP" Type="int" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ID_Product" />
+          </Key>
+          <Property Name="ID_Product" Type="int" Nullable="false" />
+          <Property Name="Product_Name" Type="varchar" MaxLength="80" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="Product_Img" Type="char" MaxLength="100" />
+          <Property Name="Price" Type="float" />
+          <Property Name="Sort_desc" Type="text" />
+          <Property Name="Characteristic" Type="text" />
+          <Property Name="Meaning" Type="text" />
+          <Property Name="Care_tips" Type="text" />
+          <Property Name="ID_Category" Type="int" Nullable="false" />
+          <Property Name="Common_Name" Type="text" />
+          <Property Name="Scientific_Name" Type="text" />
+          <Property Name="Plant_family" Type="text" />
+          <Property Name="Origin" Type="text" />
+        </EntityType>
+        <EntityType Name="Review">
+          <Key>
+            <PropertyRef Name="ID_Review" />
+          </Key>
+          <Property Name="ID_Review" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_User" Type="int" />
+          <Property Name="ID_Product" Type="int" />
+          <Property Name="Comment" Type="text" />
+          <Property Name="Rating" Type="int" />
+          <Property Name="Date_R" Type="date" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="ID_Role" />
+          </Key>
+          <Property Name="ID_Role" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Role_Name" Type="char" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Userr">
+          <Key>
+            <PropertyRef Name="ID_User" />
+          </Key>
+          <Property Name="ID_User" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="char" MaxLength="30" />
+          <Property Name="Email" Type="char" MaxLength="40" />
+          <Property Name="Phone" Type="char" MaxLength="10" />
+          <Property Name="User_Address" Type="char" MaxLength="40" />
+          <Property Name="User_Password" Type="char" MaxLength="20" />
+          <Property Name="ID_Role" Type="int" />
+        </EntityType>
+        <Association Name="FK_C_P">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ID_Product" />
+            </Principal>
+            <Dependent Role="Cart">
+              <PropertyRef Name="ID_Product" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_C_U">
+          <End Role="Userr" Type="Self.Userr" Multiplicity="1" />
+          <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Userr">
+              <PropertyRef Name="ID_User" />
+            </Principal>
+            <Dependent Role="Cart">
+              <PropertyRef Name="ID_User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Orderdetail">
+          <End Role="Orders" Type="Self.Orders" Multiplicity="0..1" />
+          <End Role="Order_detail" Type="Self.Order_detail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Orders">
+              <PropertyRef Name="ID_Order" />
+            </Principal>
+            <Dependent Role="Order_detail">
+              <PropertyRef Name="ID_Order" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_User">
+          <End Role="Userr" Type="Self.Userr" Multiplicity="0..1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Userr">
+              <PropertyRef Name="ID_User" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="ID_User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Post_Category_P">
+          <End Role="CategoryPost" Type="Self.CategoryPost" Multiplicity="0..1" />
+          <End Role="Post" Type="Self.Post" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryPost">
+              <PropertyRef Name="ID_CategoryP" />
+            </Principal>
+            <Dependent Role="Post">
+              <PropertyRef Name="ID_CategoryP" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="ID_Category" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="ID_Category" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Favorite">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Favorite" Type="Self.Favorite" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ID_Product" />
+            </Principal>
+            <Dependent Role="Favorite">
+              <PropertyRef Name="ID_Product" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Review">
+          <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+          <End Role="Review" Type="Self.Review" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ID_Product" />
+            </Principal>
+            <Dependent Role="Review">
+              <PropertyRef Name="ID_Product" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_R_U">
+          <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+          <End Role="Userr" Type="Self.Userr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="ID_Role" />
+            </Principal>
+            <Dependent Role="Userr">
+              <PropertyRef Name="ID_Role" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Favorite">
+          <End Role="Userr" Type="Self.Userr" Multiplicity="1" />
+          <End Role="Favorite" Type="Self.Favorite" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Userr">
+              <PropertyRef Name="ID_User" />
+            </Principal>
+            <Dependent Role="Favorite">
+              <PropertyRef Name="ID_User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Review">
+          <End Role="Userr" Type="Self.Userr" Multiplicity="0..1" />
+          <End Role="Review" Type="Self.Review" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Userr">
+              <PropertyRef Name="ID_User" />
+            </Principal>
+            <Dependent Role="Review">
+              <PropertyRef Name="ID_User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="QLBanCayCanhModelStoreContainer">
+          <EntitySet Name="Cart" EntityType="Self.Cart" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CategoryPost" EntityType="Self.CategoryPost" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Order_detail" EntityType="Self.Order_detail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Post" EntityType="Self.Post" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Review" EntityType="Self.Review" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Userr" EntityType="Self.Userr" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Favorite" EntityType="Self.Favorite" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Favorite].[ID_Product] AS [ID_Product], 
+    [Favorite].[ID_User] AS [ID_User]
+    FROM [dbo].[Favorite] AS [Favorite]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_C_P" Association="Self.FK_C_P">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Cart" EntitySet="Cart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_C_U" Association="Self.FK_C_U">
+            <End Role="Userr" EntitySet="Userr" />
+            <End Role="Cart" EntitySet="Cart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Orderdetail" Association="Self.FK_Order_Orderdetail">
+            <End Role="Orders" EntitySet="Orders" />
+            <End Role="Order_detail" EntitySet="Order_detail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_User" Association="Self.FK_Order_User">
+            <End Role="Userr" EntitySet="Userr" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Post_Category_P" Association="Self.FK_Post_Category_P">
+            <End Role="CategoryPost" EntitySet="CategoryPost" />
+            <End Role="Post" EntitySet="Post" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Category" Association="Self.FK_Product_Category">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Favorite" Association="Self.FK_Product_Favorite">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Favorite" EntitySet="Favorite" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Review" Association="Self.FK_Product_Review">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Review" EntitySet="Review" />
+          </AssociationSet>
+          <AssociationSet Name="FK_R_U" Association="Self.FK_R_U">
+            <End Role="Role" EntitySet="Role" />
+            <End Role="Userr" EntitySet="Userr" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Favorite" Association="Self.FK_User_Favorite">
+            <End Role="Userr" EntitySet="Userr" />
+            <End Role="Favorite" EntitySet="Favorite" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Review" Association="Self.FK_User_Review">
+            <End Role="Userr" EntitySet="Userr" />
+            <End Role="Review" EntitySet="Review" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QLBanCayCanhModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Cart">
+          <Key>
+            <PropertyRef Name="ID_Cart" />
+          </Key>
+          <Property Name="ID_Cart" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Product" Type="Int32" Nullable="false" />
+          <Property Name="ID_User" Type="Int32" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_C_P" FromRole="Cart" ToRole="Product" />
+          <NavigationProperty Name="Userr" Relationship="Self.FK_C_U" FromRole="Cart" ToRole="Userr" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="ID_Category" />
+          </Key>
+          <Property Name="ID_Category" Type="Int32" Nullable="false" />
+          <Property Name="Category1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Products" Relationship="Self.FK_Product_Category" FromRole="Category" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Order_detail">
+          <Key>
+            <PropertyRef Name="ID_Order_detail" />
+          </Key>
+          <Property Name="ID_Order_detail" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Order" Type="Int32" />
+          <Property Name="ID_Product" Type="Int32" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="Price" Type="Double" />
+          <NavigationProperty Name="Order" Relationship="Self.FK_Order_Orderdetail" FromRole="Order_detail" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="ID_Order" />
+          </Key>
+          <Property Name="ID_Order" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_User" Type="Int32" />
+          <Property Name="Total_money" Type="Double" />
+          <Property Name="payment_method" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Shipping_fee" Type="Double" />
+          <Property Name="Status_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Payment_Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Date_Payment" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Order_detail" Relationship="Self.FK_Order_Orderdetail" FromRole="Orders" ToRole="Order_detail" />
+          <NavigationProperty Name="Userr" Relationship="Self.FK_Order_User" FromRole="Orders" ToRole="Userr" />
+        </EntityType>
+        <EntityType Name="Post">
+          <Key>
+            <PropertyRef Name="ID_Post" />
+          </Key>
+          <Property Name="ID_Post" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Post_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Post_Summary" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Post_image" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+          <Property Name="Date_post" Type="DateTime" Precision="0" />
+          <Property Name="ID_CategoryP" Type="Int32" />
+          <NavigationProperty Name="CategoryPost" Relationship="QLBanCayCanhModel.FK_Post_Category_P" FromRole="Post" ToRole="CategoryPost" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ID_Product" />
+          </Key>
+          <Property Name="ID_Product" Type="Int32" Nullable="false" />
+          <Property Name="Product_Name" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="Product_Img" Type="String" MaxLength="100" FixedLength="true" Unicode="false" />
+          <Property Name="Price" Type="Double" />
+          <Property Name="Sort_desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Characteristic" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Meaning" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Care_tips" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ID_Category" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Carts" Relationship="Self.FK_C_P" FromRole="Product" ToRole="Cart" />
+          <NavigationProperty Name="Category" Relationship="Self.FK_Product_Category" FromRole="Product" ToRole="Category" />
+          <NavigationProperty Name="Reviews" Relationship="Self.FK_Product_Review" FromRole="Product" ToRole="Review" />
+          <NavigationProperty Name="Userrs" Relationship="Self.Favorite" FromRole="Product" ToRole="Userr" />
+          <Property Name="Common_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Scientific_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Plant_family" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Origin" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Review">
+          <Key>
+            <PropertyRef Name="ID_Review" />
+          </Key>
+          <Property Name="ID_Review" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_User" Type="Int32" />
+          <Property Name="ID_Product" Type="Int32" />
+          <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Rating" Type="Int32" />
+          <Property Name="Date_R" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Product_Review" FromRole="Review" ToRole="Product" />
+          <NavigationProperty Name="Userr" Relationship="Self.FK_User_Review" FromRole="Review" ToRole="Userr" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="ID_Role" />
+          </Key>
+          <Property Name="ID_Role" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Role_Name" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="Userrs" Relationship="Self.FK_R_U" FromRole="Role" ToRole="Userr" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Userr">
+          <Key>
+            <PropertyRef Name="ID_User" />
+          </Key>
+          <Property Name="ID_User" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="User_Address" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+          <Property Name="User_Password" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="ID_Role" Type="Int32" />
+          <NavigationProperty Name="Carts" Relationship="Self.FK_C_U" FromRole="Userr" ToRole="Cart" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK_Order_User" FromRole="Userr" ToRole="Orders" />
+          <NavigationProperty Name="Reviews" Relationship="Self.FK_User_Review" FromRole="Userr" ToRole="Review" />
+          <NavigationProperty Name="Role" Relationship="Self.FK_R_U" FromRole="Userr" ToRole="Role" />
+          <NavigationProperty Name="Products" Relationship="Self.Favorite" FromRole="Userr" ToRole="Product" />
+        </EntityType>
+        <Association Name="FK_C_P">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ID_Product" />
+            </Principal>
+            <Dependent Role="Cart">
+              <PropertyRef Name="ID_Product" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_C_U">
+          <End Role="Userr" Type="Self.Userr" Multiplicity="1" />
+          <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Userr">
+              <PropertyRef Name="ID_User" />
+            </Principal>
+            <Dependent Role="Cart">
+              <PropertyRef Name="ID_User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="ID_Category" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="ID_Category" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Orderdetail">
+          <End Role="Orders" Type="Self.Order" Multiplicity="0..1" />
+          <End Role="Order_detail" Type="Self.Order_detail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Orders">
+              <PropertyRef Name="ID_Order" />
+            </Principal>
+            <Dependent Role="Order_detail">
+              <PropertyRef Name="ID_Order" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_User">
+          <End Role="Userr" Type="Self.Userr" Multiplicity="0..1" />
+          <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Userr">
+              <PropertyRef Name="ID_User" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="ID_User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Review">
+          <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+          <End Role="Review" Type="Self.Review" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ID_Product" />
+            </Principal>
+            <Dependent Role="Review">
+              <PropertyRef Name="ID_Product" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Review">
+          <End Role="Userr" Type="Self.Userr" Multiplicity="0..1" />
+          <End Role="Review" Type="Self.Review" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Userr">
+              <PropertyRef Name="ID_User" />
+            </Principal>
+            <Dependent Role="Review">
+              <PropertyRef Name="ID_User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_R_U">
+          <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+          <End Role="Userr" Type="Self.Userr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="ID_Role" />
+            </Principal>
+            <Dependent Role="Userr">
+              <PropertyRef Name="ID_Role" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Favorite">
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <End Role="Userr" Type="Self.Userr" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="QLBanCayCanhEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Carts" EntityType="Self.Cart" />
+          <EntitySet Name="Categories" EntityType="Self.Category" />
+          <EntitySet Name="Order_detail" EntityType="Self.Order_detail" />
+          <EntitySet Name="Orders" EntityType="Self.Order" />
+          <EntitySet Name="Posts" EntityType="Self.Post" />
+          <EntitySet Name="Products" EntityType="Self.Product" />
+          <EntitySet Name="Reviews" EntityType="Self.Review" />
+          <EntitySet Name="Roles" EntityType="Self.Role" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Userrs" EntityType="Self.Userr" />
+          <AssociationSet Name="FK_C_P" Association="Self.FK_C_P">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Cart" EntitySet="Carts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_C_U" Association="Self.FK_C_U">
+            <End Role="Userr" EntitySet="Userrs" />
+            <End Role="Cart" EntitySet="Carts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Category" Association="Self.FK_Product_Category">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Orderdetail" Association="Self.FK_Order_Orderdetail">
+            <End Role="Orders" EntitySet="Orders" />
+            <End Role="Order_detail" EntitySet="Order_detail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_User" Association="Self.FK_Order_User">
+            <End Role="Userr" EntitySet="Userrs" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Review" Association="Self.FK_Product_Review">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Review" EntitySet="Reviews" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Review" Association="Self.FK_User_Review">
+            <End Role="Userr" EntitySet="Userrs" />
+            <End Role="Review" EntitySet="Reviews" />
+          </AssociationSet>
+          <AssociationSet Name="FK_R_U" Association="Self.FK_R_U">
+            <End Role="Role" EntitySet="Roles" />
+            <End Role="Userr" EntitySet="Userrs" />
+          </AssociationSet>
+          <AssociationSet Name="Favorite" Association="Self.Favorite">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Userr" EntitySet="Userrs" />
+          </AssociationSet>
+          <EntitySet Name="CategoryPosts" EntityType="QLBanCayCanhModel.CategoryPost" />
+          <AssociationSet Name="FK_Post_Category_P" Association="QLBanCayCanhModel.FK_Post_Category_P">
+            <End Role="CategoryPost" EntitySet="CategoryPosts" />
+            <End Role="Post" EntitySet="Posts" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CategoryPost">
+          <Key>
+            <PropertyRef Name="ID_CategoryP" />
+          </Key>
+          <Property Name="ID_CategoryP" Type="Int32" Nullable="false" />
+          <Property Name="CategoryP" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Posts" Relationship="QLBanCayCanhModel.FK_Post_Category_P" FromRole="CategoryPost" ToRole="Post" />
+        </EntityType>
+        <Association Name="FK_Post_Category_P">
+          <End Type="QLBanCayCanhModel.CategoryPost" Role="CategoryPost" Multiplicity="0..1" />
+          <End Type="QLBanCayCanhModel.Post" Role="Post" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryPost">
+              <PropertyRef Name="ID_CategoryP" />
+            </Principal>
+            <Dependent Role="Post">
+              <PropertyRef Name="ID_CategoryP" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QLBanCayCanhModelStoreContainer" CdmEntityContainer="QLBanCayCanhEntities1">
+          <EntitySetMapping Name="Carts">
+            <EntityTypeMapping TypeName="QLBanCayCanhModel.Cart">
+              <MappingFragment StoreEntitySet="Cart">
+                <ScalarProperty Name="ID_Cart" ColumnName="ID_Cart" />
+                <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+                <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="QLBanCayCanhModel.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="ID_Category" ColumnName="ID_Category" />
+                <ScalarProperty Name="Category1" ColumnName="Category" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Order_detail">
+            <EntityTypeMapping TypeName="QLBanCayCanhModel.Order_detail">
+              <MappingFragment StoreEntitySet="Order_detail">
+                <ScalarProperty Name="ID_Order_detail" ColumnName="ID_Order_detail" />
+                <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+                <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="QLBanCayCanhModel.Order">
+              <MappingFragment StoreEntitySet="Orders">
+                <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+                <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+                <ScalarProperty Name="Total_money" ColumnName="Total_money" />
+                <ScalarProperty Name="payment_method" ColumnName="payment_method" />
+                <ScalarProperty Name="Shipping_fee" ColumnName="Shipping_fee" />
+                <ScalarProperty Name="Status_" ColumnName="Status_" />
+                <ScalarProperty Name="Payment_Status" ColumnName="Payment_Status" />
+                <ScalarProperty Name="Date_Payment" ColumnName="Date_Payment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Posts">
+            <EntityTypeMapping TypeName="QLBanCayCanhModel.Post">
+              <MappingFragment StoreEntitySet="Post">
+                <ScalarProperty Name="ID_CategoryP" ColumnName="ID_CategoryP" />
+                <ScalarProperty Name="ID_Post" ColumnName="ID_Post" />
+                <ScalarProperty Name="Post_Name" ColumnName="Post_Name" />
+                <ScalarProperty Name="Post_Summary" ColumnName="Post_Summary" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Post_image" ColumnName="Post_image" />
+                <ScalarProperty Name="Date_post" ColumnName="Date_post" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="QLBanCayCanhModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="Origin" ColumnName="Origin" />
+                <ScalarProperty Name="Plant_family" ColumnName="Plant_family" />
+                <ScalarProperty Name="Scientific_Name" ColumnName="Scientific_Name" />
+                <ScalarProperty Name="Common_Name" ColumnName="Common_Name" />
+                <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+                <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Product_Img" ColumnName="Product_Img" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Sort_desc" ColumnName="Sort_desc" />
+                <ScalarProperty Name="Characteristic" ColumnName="Characteristic" />
+                <ScalarProperty Name="Meaning" ColumnName="Meaning" />
+                <ScalarProperty Name="Care_tips" ColumnName="Care_tips" />
+                <ScalarProperty Name="ID_Category" ColumnName="ID_Category" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reviews">
+            <EntityTypeMapping TypeName="QLBanCayCanhModel.Review">
+              <MappingFragment StoreEntitySet="Review">
+                <ScalarProperty Name="ID_Review" ColumnName="ID_Review" />
+                <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+                <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="Date_R" ColumnName="Date_R" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="QLBanCayCanhModel.Role">
+              <MappingFragment StoreEntitySet="Role">
+                <ScalarProperty Name="ID_Role" ColumnName="ID_Role" />
+                <ScalarProperty Name="Role_Name" ColumnName="Role_Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="QLBanCayCanhModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Userrs">
+            <EntityTypeMapping TypeName="QLBanCayCanhModel.Userr">
+              <MappingFragment StoreEntitySet="Userr">
+                <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="User_Address" ColumnName="User_Address" />
+                <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+                <ScalarProperty Name="ID_Role" ColumnName="ID_Role" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="Favorite" TypeName="QLBanCayCanhModel.Favorite" StoreEntitySet="Favorite">
+            <EndProperty Name="Product">
+              <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+            </EndProperty>
+            <EndProperty Name="Userr">
+              <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <EntitySetMapping Name="CategoryPosts">
+            <EntityTypeMapping TypeName="QLBanCayCanhModel.CategoryPost">
+              <MappingFragment StoreEntitySet="CategoryPost">
+                <ScalarProperty Name="CategoryP" ColumnName="CategoryP" />
+                <ScalarProperty Name="ID_CategoryP" ColumnName="ID_CategoryP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

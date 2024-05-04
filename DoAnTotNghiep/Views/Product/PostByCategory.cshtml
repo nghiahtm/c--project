@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewBag.Title = "PostByCategory";
+    Layout = "~/Views/Shared/_LayoutBlog.cshtml";
+}
+
+@model  List<DoAnTotNghiep.Models.Post>
+@*@using PagedList.Mvc;*@
+<div class="col-lg-4 col-md-5">
+    <div class="blog__sidebar">
+        <div class="blog__sidebar__search">
+            <form action="#">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><span class="icon_search"></span></button>
+            </form>
+        </div>
+        <div class="blog__sidebar__item">
+            <h4>Categories</h4>
+            <ul>
+                <li>@Html.ActionLink("All", "Blog", "Product", new { area = "" }, new { @class = "nav-link" })</li>
+                @Html.Action("CategoryPostPartial", "Product")
+            </ul>
+        </div>
+        <style>
+            .nav-link {
+                padding: 0px
+            }
+        </style>
+    </div>
+</div>
+<div class="col-lg-8 col-md-7">
+    <div class="row">
+        @{
+            foreach (var item in Model)
+            {
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="@Url.Content("~/Images/" + item.Post_image)" alt="" style="width:360px; height:288px">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> @item.Date_post</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="">@item.Post_Name</a></h5>
+
+                            <p>
+                                @item.Post_Summary
+                            </p>
+                            <a href="@Url.Action("BlogDetail", "Product", new { @ID_CategoryP = item.ID_CategoryP })" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+        @*<div class="col-lg-12">
+                <div class="product__pagination blog__pagination">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+                </div>
+            </div>*@
+    </div>
+
+
+</div>
+@*<div>
+        <nav>
+            <ul class="pagination">
+                <li class="active">@Html.PagedListPager(Model, page => Url.Action("Blog", new { page }))</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="trang">Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount</div>
+    <style>
+        .pagination li {
+            border-width: 20px;
+            margin-left: 50px;
+        }
+
+        .pagination {
+            margin-left: 367px;
+        }
+
+        .trang {
+            margin-left: 1075px;
+        }
+
+        .pagination li active a {
+            background-color: green;
+        }
+    </style>*@
+
+

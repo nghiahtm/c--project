@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLBanCayCanhModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="ID_Cart" />
+    </Key>
+    <Property Name="ID_Cart" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Product" Type="Int32" Nullable="false" />
+    <Property Name="ID_User" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_C_P" FromRole="Cart" ToRole="Product" />
+    <NavigationProperty Name="Userr" Relationship="Self.FK_C_U" FromRole="Cart" ToRole="Userr" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID_Category" />
+    </Key>
+    <Property Name="ID_Category" Type="Int32" Nullable="false" />
+    <Property Name="Category1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Product_Category" FromRole="Category" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="CategoryPost">
+    <Key>
+      <PropertyRef Name="ID_CategoryP" />
+    </Key>
+    <Property Name="ID_CategoryP" Type="Int32" Nullable="false" />
+    <Property Name="CategoryP" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Posts" Relationship="Self.FK_Post_Category_P" FromRole="CategoryPost" ToRole="Post" />
+  </EntityType>
+  <EntityType Name="Favorite">
+    <Key>
+      <PropertyRef Name="ID_Favorite" />
+    </Key>
+    <Property Name="ID_Favorite" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_User" Type="Int32" Nullable="false" />
+    <Property Name="ID_Product" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Product" FromRole="Favorites" ToRole="Product" />
+    <NavigationProperty Name="Userr" Relationship="Self.FK_User" FromRole="Favorites" ToRole="Userr" />
+  </EntityType>
+  <EntityType Name="Lastest">
+    <Key>
+      <PropertyRef Name="ID_Lastest" />
+    </Key>
+    <Property Name="ID_Lastest" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Product" Type="Int32" Nullable="false" />
+    <Property Name="ID_User" Type="Int32" Nullable="false" />
+    <Property Name="Date_Create" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_L_P" FromRole="Lastest" ToRole="Product" />
+    <NavigationProperty Name="Userr" Relationship="Self.FK_L_U" FromRole="Lastest" ToRole="Userr" />
+  </EntityType>
+  <EntityType Name="Order_detail">
+    <Key>
+      <PropertyRef Name="ID_Order_detail" />
+    </Key>
+    <Property Name="ID_Order_detail" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Order" Type="Int32" />
+    <Property Name="ID_Product" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Price" Type="Double" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_Order_Orderdetail" FromRole="Order_detail" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="ID_Order" />
+    </Key>
+    <Property Name="ID_Order" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_User" Type="Int32" />
+    <Property Name="Total_money" Type="Double" />
+    <Property Name="payment_method" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Shipping_fee" Type="Double" />
+    <Property Name="Payment_Status" Type="Boolean" />
+    <Property Name="Order_Status" Type="Int32" />
+    <Property Name="Date_Order" Type="DateTime" Precision="3" />
+    <Property Name="Date_Payment" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Order_detail" Relationship="Self.FK_Order_Orderdetail" FromRole="Orders" ToRole="Order_detail" />
+    <NavigationProperty Name="Userr" Relationship="Self.FK_Order_User" FromRole="Orders" ToRole="Userr" />
+  </EntityType>
+  <EntityType Name="Post">
+    <Key>
+      <PropertyRef Name="ID_Post" />
+    </Key>
+    <Property Name="ID_Post" Type="Int32" Nullable="false" />
+    <Property Name="Post_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Post_Summary" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Post_image" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="Date_post" Type="DateTime" Precision="0" />
+    <Property Name="ID_CategoryP" Type="Int32" />
+    <NavigationProperty Name="CategoryPost" Relationship="Self.FK_Post_Category_P" FromRole="Post" ToRole="CategoryPost" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ID_Product" />
+    </Key>
+    <Property Name="ID_Product" Type="Int32" Nullable="false" />
+    <Property Name="Product_Name" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Product_Img" Type="String" MaxLength="100" FixedLength="true" Unicode="false" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="Sort_desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Characteristic" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Meaning" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Care_tips" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Category" Type="Int32" Nullable="false" />
+    <Property Name="Common_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Scientific_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Plant_family" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Origin" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Carts" Relationship="Self.FK_C_P" FromRole="Product" ToRole="Cart" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_Product_Category" FromRole="Product" ToRole="Category" />
+    <NavigationProperty Name="Favorites" Relationship="Self.FK_Product" FromRole="Product" ToRole="Favorites" />
+    <NavigationProperty Name="Lastests" Relationship="Self.FK_L_P" FromRole="Product" ToRole="Lastest" />
+    <NavigationProperty Name="Reviews" Relationship="Self.FK_Product_Review" FromRole="Product" ToRole="Review" />
+  </EntityType>
+  <EntityType Name="Review">
+    <Key>
+      <PropertyRef Name="ID_Review" />
+    </Key>
+    <Property Name="ID_Review" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_User" Type="Int32" />
+    <Property Name="ID_Product" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Rating" Type="Int32" />
+    <Property Name="Date_R" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Product_Review" FromRole="Review" ToRole="Product" />
+    <NavigationProperty Name="Userr" Relationship="Self.FK_User_Review" FromRole="Review" ToRole="Userr" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID_Role" />
+    </Key>
+    <Property Name="ID_Role" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Role_Name" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="Userrs" Relationship="Self.FK_R_U" FromRole="Role" ToRole="Userr" />
+    <NavigationProperty Name="role_group" Relationship="Self.fk_role" FromRole="Role" ToRole="role_group" />
+  </EntityType>
+  <EntityType Name="Role_Def">
+    <Key>
+      <PropertyRef Name="ID_Role" />
+    </Key>
+    <Property Name="ID_Role" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Role_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_RoleGroup" Type="Int32" />
+    <NavigationProperty Name="role_group" Relationship="Self.FK_RoleGroup" FromRole="Role_Def" ToRole="role_group" />
+  </EntityType>
+  <EntityType Name="role_group">
+    <Key>
+      <PropertyRef Name="role_group_id" />
+    </Key>
+    <Property Name="role_group_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="role_group_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="role_description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Role" Type="Int32" />
+    <NavigationProperty Name="Role" Relationship="Self.fk_role" FromRole="role_group" ToRole="Role" />
+    <NavigationProperty Name="Role_Def" Relationship="Self.FK_RoleGroup" FromRole="role_group" ToRole="Role_Def" />
+  </EntityType>
+  <EntityType Name="Userr">
+    <Key>
+      <PropertyRef Name="ID_User" />
+    </Key>
+    <Property Name="ID_User" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="User_Address" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="User_Password" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="ID_Role" Type="Int32" />
+    <Property Name="Role_Group_Id" Type="Int32" />
+    <NavigationProperty Name="Carts" Relationship="Self.FK_C_U" FromRole="Userr" ToRole="Cart" />
+    <NavigationProperty Name="Favorites" Relationship="Self.FK_User" FromRole="Userr" ToRole="Favorites" />
+    <NavigationProperty Name="Lastests" Relationship="Self.FK_L_U" FromRole="Userr" ToRole="Lastest" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Order_User" FromRole="Userr" ToRole="Orders" />
+    <NavigationProperty Name="Reviews" Relationship="Self.FK_User_Review" FromRole="Userr" ToRole="Review" />
+    <NavigationProperty Name="Role" Relationship="Self.FK_R_U" FromRole="Userr" ToRole="Role" />
+  </EntityType>
+  <Association Name="FK_C_P">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ID_Product" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="ID_Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_C_U">
+    <End Role="Userr" Type="Self.Userr" Multiplicity="1" />
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Userr">
+        <PropertyRef Name="ID_User" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="ID_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID_Category" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ID_Category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Post_Category_P">
+    <End Role="CategoryPost" Type="Self.CategoryPost" Multiplicity="0..1" />
+    <End Role="Post" Type="Self.Post" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoryPost">
+        <PropertyRef Name="ID_CategoryP" />
+      </Principal>
+      <Dependent Role="Post">
+        <PropertyRef Name="ID_CategoryP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="Favorites" Type="Self.Favorite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ID_Product" />
+      </Principal>
+      <Dependent Role="Favorites">
+        <PropertyRef Name="ID_Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User">
+    <End Role="Userr" Type="Self.Userr" Multiplicity="1" />
+    <End Role="Favorites" Type="Self.Favorite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Userr">
+        <PropertyRef Name="ID_User" />
+      </Principal>
+      <Dependent Role="Favorites">
+        <PropertyRef Name="ID_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_L_P">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="Lastest" Type="Self.Lastest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ID_Product" />
+      </Principal>
+      <Dependent Role="Lastest">
+        <PropertyRef Name="ID_Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_L_U">
+    <End Role="Userr" Type="Self.Userr" Multiplicity="1" />
+    <End Role="Lastest" Type="Self.Lastest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Userr">
+        <PropertyRef Name="ID_User" />
+      </Principal>
+      <Dependent Role="Lastest">
+        <PropertyRef Name="ID_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Orderdetail">
+    <End Role="Orders" Type="Self.Order" Multiplicity="0..1" />
+    <End Role="Order_detail" Type="Self.Order_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="ID_Order" />
+      </Principal>
+      <Dependent Role="Order_detail">
+        <PropertyRef Name="ID_Order" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_User">
+    <End Role="Userr" Type="Self.Userr" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Userr">
+        <PropertyRef Name="ID_User" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="ID_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Review">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="Review" Type="Self.Review" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ID_Product" />
+      </Principal>
+      <Dependent Role="Review">
+        <PropertyRef Name="ID_Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Review">
+    <End Role="Userr" Type="Self.Userr" Multiplicity="0..1" />
+    <End Role="Review" Type="Self.Review" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Userr">
+        <PropertyRef Name="ID_User" />
+      </Principal>
+      <Dependent Role="Review">
+        <PropertyRef Name="ID_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_R_U">
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+    <End Role="Userr" Type="Self.Userr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID_Role" />
+      </Principal>
+      <Dependent Role="Userr">
+        <PropertyRef Name="ID_Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_role">
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+    <End Role="role_group" Type="Self.role_group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID_Role" />
+      </Principal>
+      <Dependent Role="role_group">
+        <PropertyRef Name="ID_Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoleGroup">
+    <End Role="role_group" Type="Self.role_group" Multiplicity="0..1" />
+    <End Role="Role_Def" Type="Self.Role_Def" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="role_group">
+        <PropertyRef Name="role_group_id" />
+      </Principal>
+      <Dependent Role="Role_Def">
+        <PropertyRef Name="ID_RoleGroup" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLBanCayCanhEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Carts" EntityType="Self.Cart" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="CategoryPosts" EntityType="Self.CategoryPost" />
+    <EntitySet Name="Favorites" EntityType="Self.Favorite" />
+    <EntitySet Name="Lastests" EntityType="Self.Lastest" />
+    <EntitySet Name="Order_detail" EntityType="Self.Order_detail" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="Posts" EntityType="Self.Post" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="Reviews" EntityType="Self.Review" />
+    <EntitySet Name="Roles" EntityType="Self.Role" />
+    <EntitySet Name="Role_Def" EntityType="Self.Role_Def" />
+    <EntitySet Name="role_group" EntityType="Self.role_group" />
+    <EntitySet Name="Userrs" EntityType="Self.Userr" />
+    <AssociationSet Name="FK_C_P" Association="Self.FK_C_P">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Cart" EntitySet="Carts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_C_U" Association="Self.FK_C_U">
+      <End Role="Userr" EntitySet="Userrs" />
+      <End Role="Cart" EntitySet="Carts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Category" Association="Self.FK_Product_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Post_Category_P" Association="Self.FK_Post_Category_P">
+      <End Role="CategoryPost" EntitySet="CategoryPosts" />
+      <End Role="Post" EntitySet="Posts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product" Association="Self.FK_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Favorites" EntitySet="Favorites" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User" Association="Self.FK_User">
+      <End Role="Userr" EntitySet="Userrs" />
+      <End Role="Favorites" EntitySet="Favorites" />
+    </AssociationSet>
+    <AssociationSet Name="FK_L_P" Association="Self.FK_L_P">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Lastest" EntitySet="Lastests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_L_U" Association="Self.FK_L_U">
+      <End Role="Userr" EntitySet="Userrs" />
+      <End Role="Lastest" EntitySet="Lastests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Orderdetail" Association="Self.FK_Order_Orderdetail">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="Order_detail" EntitySet="Order_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_User" Association="Self.FK_Order_User">
+      <End Role="Userr" EntitySet="Userrs" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Review" Association="Self.FK_Product_Review">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Review" EntitySet="Reviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Review" Association="Self.FK_User_Review">
+      <End Role="Userr" EntitySet="Userrs" />
+      <End Role="Review" EntitySet="Reviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_R_U" Association="Self.FK_R_U">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="Userr" EntitySet="Userrs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_role" Association="Self.fk_role">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="role_group" EntitySet="role_group" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoleGroup" Association="Self.FK_RoleGroup">
+      <End Role="role_group" EntitySet="role_group" />
+      <End Role="Role_Def" EntitySet="Role_Def" />
+    </AssociationSet>
+    <EntitySet Name="Contacts" EntityType="QLBanCayCanhModel.Contact" />
+  </EntityContainer>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="ID_Contact" />
+    </Key>
+    <Property Name="ID_Contact" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fullname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Messagee" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Flag" Type="Int32" Nullable="false" />
+    <Property Name="Reply" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="Created_at" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Updated_at" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Updated_by" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

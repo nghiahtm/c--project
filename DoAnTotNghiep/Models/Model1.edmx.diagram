@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6e6d422679a1418ebbadea64aedfc9c6" Name="Diagram1" ZoomLevel="63">
+        <EntityTypeShape EntityType="QLBanCayCanhModel.Cart" Width="1.5" PointX="5.25" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.Category" Width="1.5" PointX="3.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.CategoryPost" Width="1.5" PointX="8.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.Favorite" Width="1.5" PointX="5.25" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.Lastest" Width="1.5" PointX="8.25" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.Order_detail" Width="1.5" PointX="3.25" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.Order" Width="1.5" PointX="1" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.Post" Width="1.5" PointX="10.5" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.Product" Width="1.5" PointX="6" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.Review" Width="1.5" PointX="8.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.Role" Width="1.5" PointX="0.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.Role_Def" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.role_group" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.Userr" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_C_P" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_C_U" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_Post_Category_P" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_User" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_L_P" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_L_U" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_Order_Orderdetail" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_Order_User" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_Product_Review" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_User_Review" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_R_U" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.fk_role" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBanCayCanhModel.FK_RoleGroup" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="QLBanCayCanhModel.Contact" Width="1.5" PointX="10.375" PointY="4.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

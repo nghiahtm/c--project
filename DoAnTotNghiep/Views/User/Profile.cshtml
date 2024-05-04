@@ -1,0 +1,35 @@
+﻿@model DoAnTotNghiep.Models.Userr
+@{
+    Layout = "~/Views/Shared/_LayoutProfile.cshtml";
+}
+
+<form action="#" class="signin-form" style="margin-top:0px">
+    User Name: <br />
+    <div class="form-group" style="border-radius: 10px; border:solid 0.5px">
+        @Html.DisplayFor(model => model.UserName)
+    </div>
+    Email: <br />
+    <div class="form-group" style="border-radius: 10px; border:solid 0.5px">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+    Phone Number: <br />
+    <div class="form-group" style="border-radius: 10px; border:solid 0.5px">
+        @Html.DisplayFor(model => model.Phone)
+    </div>
+    Password: <br />
+    <div class="form-group" style="border-radius: 10px; border:solid 0.5px">
+        @Html.DisplayFor(model => model.User_Password)
+    </div>
+    Address: <br />
+    <div class="form-group" style="border-radius: 10px; border:solid 0.5px">
+        @Html.DisplayFor(model => model.User_Address)
+    </div>
+</form>
+<p>
+    <button class="btn btn-primary" style="margin-right:80px; background-color:white">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID_User }, new { @style = "color:black;" })
+    </button>
+    @*<button class="btn btn-primary" >
+        @Html.ActionLink("Back to List", "Index", new { @style = "color:black;" })
+    </button>*@
+</p>

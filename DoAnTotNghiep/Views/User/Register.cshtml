@@ -1,0 +1,75 @@
+﻿@model DoAnTotNghiep.Models.Userr
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+    var useReg = Session["useReg"] as DoAnTotNghiep.Models.Userr;
+}
+
+<h3>@ViewBag.RegOk</h3>
+
+@{
+    if (ViewBag.isReg == true)
+    {
+        <button class="btn-primary"> <a style="color:white" href="/User/Login"> Đăng nhập</a> </button>
+    }
+}
+    <div class="d-md-flex half">
+        <div class="bg" style="background-image: url('/AssetLogin/images/cay-chuoi-re-quat-dep.jpg');"></div>
+        <div class="contents">
+
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-12">
+                        <div class="form-block mx-auto">
+                            <div class="text-center mb-5">
+                                <h3>Register to <strong>NB Garden</strong></h3>
+                            </div>
+
+                            @using (Html.BeginForm("Register", "User", FormMethod.Post))
+                            {
+                                @Html.AntiForgeryToken()
+                                <form action="#" method="post">
+                                    <div class="form-group first">
+
+                                        <label for="username">Username</label>
+                                        @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group last mb-3">
+                                        <label for="email">Email</label>
+                                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+
+                                    </div>
+                                    <div class="form-group last mb-3">
+                                        <label for="phone">Phone</label>
+                                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+
+                                    </div>
+                                    <div class="form-group last mb-3">
+                                        <label for="password">Password</label>
+                                        @Html.EditorFor(model => model.User_Password, new { htmlAttributes = new { type = "Password", @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.User_Password, "", new { @class = "text-danger" })
+
+                                    </div>
+                                    <div class="form-group last mb-3">
+                                        <label for="address">Address</label>
+                                        @Html.EditorFor(model => model.User_Address, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.User_Address, "", new { @class = "text-danger" })
+
+                                    </div>
+
+
+                                    <input style="background-color:forestgreen " type="submit" value="Register" class="btn btn-block btn-primary">
+
+                                </form>
+                                <a href="./Login"> <h6 style="margin-top:15px">Do you have an account? Login now!</h6></a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

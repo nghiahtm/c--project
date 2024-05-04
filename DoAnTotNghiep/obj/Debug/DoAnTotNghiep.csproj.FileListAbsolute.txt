@@ -1,0 +1,435 @@
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.dll.config
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.pdb
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\Antlr3.Runtime.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.SqlServer.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.Web.Infrastructure.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\Newtonsoft.Json.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.Mvc.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Helpers.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Mvc.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Optimization.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Razor.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Deployment.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Razor.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\WebGrease.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.xml
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.SqlServer.xml
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.xml
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.Mvc.xml
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Helpers.xml
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Mvc.xml
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Optimization.xml
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Razor.xml
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.xml
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Deployment.xml
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Razor.xml
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\Newtonsoft.Json.xml
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\Antlr3.Runtime.pdb
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.AssemblyReference.cache
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.CoreCompileInputs.cache
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotN.C4588582.Up2Date
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.pdb
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.exe
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.exe.config
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.rsp
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.exe
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.exe.config
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.rsp
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.AppContext.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Collections.Immutable.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Console.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Globalization.Calendars.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.Compression.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.FileSystem.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Net.Http.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Net.Sockets.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Reflection.Metadata.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.ValueTuple.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XPath.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.exe
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.exe.config
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.rsp
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\VBCSCompiler.exe
+D:\Working\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\VBCSCompiler.exe.config
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.dll.config
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.pdb
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.exe
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.exe.config
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.rsp
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.exe
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.exe.config
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.rsp
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Managed.Core.targets
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.AppContext.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Collections.Immutable.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Console.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Globalization.Calendars.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.Compression.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.FileSystem.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Net.Http.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Net.Sockets.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Reflection.Metadata.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.ValueTuple.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XmlDocument.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XPath.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.exe
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.exe.config
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.rsp
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\VBCSCompiler.exe
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\VBCSCompiler.exe.config
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\Antlr3.Runtime.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.SqlServer.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.Web.Infrastructure.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\Newtonsoft.Json.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.Mvc.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Helpers.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Mvc.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Optimization.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Razor.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Deployment.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Razor.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\WebGrease.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.xml
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.SqlServer.xml
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.xml
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.Mvc.xml
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Helpers.xml
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Mvc.xml
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Optimization.xml
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Razor.xml
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.xml
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Deployment.xml
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Razor.xml
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\Newtonsoft.Json.xml
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\Antlr3.Runtime.pdb
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.AssemblyReference.cache
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.CoreCompileInputs.cache
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.CopyComplete
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.dll
+F:\DoAnTotNghiep (1)\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.pdb
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.dll.config
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.pdb
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.exe
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.exe.config
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.rsp
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.exe
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.exe.config
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.rsp
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CSharp.Core.targets
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Managed.Core.targets
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.VisualBasic.Core.targets
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Win32.Primitives.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.AppContext.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Collections.Immutable.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Console.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.StackTrace.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Globalization.Calendars.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.Compression.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.Compression.ZipFile.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.FileSystem.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.FileSystem.Primitives.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Net.Http.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Net.Sockets.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Reflection.Metadata.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Encoding.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Primitives.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Text.Encoding.CodePages.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Threading.Tasks.Extensions.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.ValueTuple.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.ReaderWriter.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XmlDocument.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XPath.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XPath.XDocument.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.exe
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.exe.config
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.rsp
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\VBCSCompiler.exe
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\VBCSCompiler.exe.config
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\Antlr3.Runtime.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.SqlServer.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.Web.Infrastructure.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\Newtonsoft.Json.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.Mvc.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Helpers.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Mvc.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Optimization.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Razor.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Deployment.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Razor.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\WebGrease.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.SqlServer.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.Mvc.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Helpers.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Mvc.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Optimization.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Razor.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Deployment.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Razor.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\Newtonsoft.Json.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\Antlr3.Runtime.pdb
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.AssemblyReference.cache
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.CoreCompileInputs.cache
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.CopyComplete
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep2\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.pdb
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.AssemblyReference.cache
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.CoreCompileInputs.cache
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.pdb
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.dll.config
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.pdb
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.exe
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.exe.config
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.rsp
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.exe
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.exe.config
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.rsp
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CSharp.Core.targets
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Managed.Core.targets
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.VisualBasic.Core.targets
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Win32.Primitives.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.AppContext.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Collections.Immutable.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Console.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.StackTrace.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Globalization.Calendars.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.Compression.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.Compression.ZipFile.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.FileSystem.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.FileSystem.Primitives.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Net.Http.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Net.Sockets.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Reflection.Metadata.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Encoding.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Primitives.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Text.Encoding.CodePages.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Threading.Tasks.Extensions.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.ValueTuple.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.ReaderWriter.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XmlDocument.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XPath.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XPath.XDocument.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.exe
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.exe.config
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.rsp
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\VBCSCompiler.exe
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\VBCSCompiler.exe.config
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\Antlr3.Runtime.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.SqlServer.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.Web.Infrastructure.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\Newtonsoft.Json.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.Mvc.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Helpers.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Mvc.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Optimization.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Razor.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Deployment.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Razor.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\WebGrease.dll
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.SqlServer.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.Mvc.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Helpers.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Mvc.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Optimization.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Razor.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Deployment.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Razor.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\Newtonsoft.Json.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\Antlr3.Runtime.pdb
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+K:\K-Project\ASP.Net MVC\DoAnTotNghiep\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.CopyComplete
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.dll.config
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\DoAnTotNghiep.pdb
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.exe
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.exe.config
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csc.rsp
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.exe
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.exe.config
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\csi.rsp
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Managed.Core.targets
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.AppContext.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Collections.Immutable.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Console.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Globalization.Calendars.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.Compression.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.FileSystem.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Net.Http.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Net.Sockets.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Reflection.Metadata.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.ValueTuple.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XmlDocument.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XPath.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.exe
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.exe.config
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\vbc.rsp
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\VBCSCompiler.exe
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\roslyn\VBCSCompiler.exe.config
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\Antlr3.Runtime.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.SqlServer.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.Web.Infrastructure.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\Newtonsoft.Json.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.Mvc.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Helpers.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Mvc.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Optimization.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Razor.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Deployment.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Razor.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\WebGrease.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.xml
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\EntityFramework.SqlServer.xml
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.xml
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\PagedList.Mvc.xml
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Helpers.xml
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Mvc.xml
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Optimization.xml
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.Razor.xml
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.xml
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Deployment.xml
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\System.Web.WebPages.Razor.xml
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\Newtonsoft.Json.xml
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\Antlr3.Runtime.pdb
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.AssemblyReference.cache
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.CoreCompileInputs.cache
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.csproj.CopyComplete
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.dll
+F:\DoAnTotNghiepp\DoAnTotNghiep\DoAnTotNghiep\obj\Debug\DoAnTotNghiep.pdb

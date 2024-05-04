@@ -1,0 +1,21 @@
+﻿
+@model DoAnTotNghiep.Models.Order
+@{
+    ViewBag.Title = "ViewOrderSuccess";
+    Layout = "~/Views/Shared/_LayoutProductDetail.cshtml";
+}
+<header>
+</header>
+<div class="order-succes">
+    <div class="container" style="padding-left: 480px; margin-left: 140px">
+        <img src="~/Images/tich.png" style="width:100px;height:100px"/>
+        <h2 style="color: #1c1c1c; font-weight: 700">Order placed successfully</h2>
+        <p>You're welcome! Your order has been placed!</p>
+        <p>Payment status:@Model.Order_Status </p>
+        <p>Total payment amount:@Model.Total_money </p>
+        <p>Order ID: @Model.ID_Order</p>
+        <p>You can view the order details here: <a href="#">[View order details]</a></p>
+    </div>
+</div>
+<style>
+</style>

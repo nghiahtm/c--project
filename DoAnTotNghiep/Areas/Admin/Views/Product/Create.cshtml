@@ -1,0 +1,201 @@
+﻿@model DoAnTotNghiep.Models.Product
+
+<div style="padding: 40px">
+    <div class="row">
+        <div class="col-md-6">
+            <h4 class="fw-bold pb-3 mb-4"><span class="text-muted fw-light">Product /</span> Create</h4>
+        </div>
+        <div class="col-md-6 ">
+            @*<div class="flex-row justify-content-end" style="display: flex">
+                    <a class="btn btn-primary" style="margin-right: 10px" href="@Url.Action("Create")">Thêm mới</a>
+                </div>*@
+        </div>
+    </div>
+    <div class="card" style="padding: 20px">
+        @using (Html.BeginForm("Create", "Product", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger " })
+
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label class="control-label">Product Name</label>
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Product_Name, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Product_Name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label class="control-label">Category</label>
+                    </div>
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.ID_Category, ViewBag.Categories as SelectList
+    , new { @class = "form-control select2" })
+                        @Html.ValidationMessageFor(model => model.ID_Category, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row mb-3">
+                            <div class="col-md-12"><label class="control-label">Quantity</label></div>
+                            <div class="col-md-12">
+                                @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control", @type = "number" } })
+                                @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row mb-3">
+                            <div class="col-md-12"><label class="control-label">Price</label></div>
+                            <div class="col-md-12">
+                                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control", @type = "number" } })
+                                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row mb-3">
+                            <div class="col-md-12"><label class="control-label">Common Name</label></div>
+                            <div class="col-md-12">
+                                @Html.EditorFor(model => model.Common_Name, new { htmlAttributes = new { @class = "form-control", @type = "text" } })
+                                @Html.ValidationMessageFor(model => model.Common_Name, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row mb-3">
+                            <div class="col-md-12"><label class="control-label">Scientific Name</label></div>
+                            <div class="col-md-12">
+                                @Html.EditorFor(model => model.Scientific_Name, new { htmlAttributes = new { @class = "form-control", @type = "text" } })
+                                @Html.ValidationMessageFor(model => model.Scientific_Name, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row mb-3">
+                            <div class="col-md-12"><label class="control-label">Plant family</label></div>
+                            <div class="col-md-12">
+                                @Html.EditorFor(model => model.Plant_family, new { htmlAttributes = new { @class = "form-control", @type = "text" } })
+                                @Html.ValidationMessageFor(model => model.Plant_family, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row mb-3">
+                            <div class="col-md-12"><label class="control-label">Origin</label></div>
+                            <div class="col-md-12">
+                                @Html.EditorFor(model => model.Origin, new { htmlAttributes = new { @class = "form-control", @type = "text" } })
+                                @Html.ValidationMessageFor(model => model.Origin, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row mb-3">
+                            <div class="col-md-12"><label class="control-label">Sort desc</label></div>
+                            <div class="col-md-12">
+                                @Html.TextAreaFor(model => model.Sort_desc, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Sort_desc, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row mb-3">
+                            <div class="col-md-12"><label class="control-label">Characteristic</label></div>
+                            <div class="col-md-12">
+                                @Html.TextAreaFor(model => model.Characteristic, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Characteristic, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row mb-3">
+                            <div class="col-md-12"><label class="control-label">Meaning</label></div>
+                            <div class="col-md-12">
+                                @Html.TextAreaFor(model => model.Meaning, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Meaning, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row mb-3">
+                            <div class="col-md-12"><label class="control-label">Care tips</label></div>
+                            <div class="col-md-12">
+                                @Html.TextAreaFor(model => model.Care_tips, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Care_tips, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row mb-3">
+                            <div class="col-md-12"><label class="control-label">Image</label></div>
+                            <div class="col-md-12">
+                                @Html.HiddenFor(model => model.Product_Img, new { @class = "form-control" })
+                                <input type="file" name="file" id="file" />
+                                <div>
+                                    <img class="box-img" id="img" width="250" height="250" style="object-fit: cover" />
+                                </div>
+                                @Html.ValidationMessageFor(model => model.Product_Img, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-6">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                        @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-default" })
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    
+    const uploadImage = async (event) => {
+        const file = event.target.files[0];
+        const name = file.name;
+        const base64 = await convertFileToBase64(file);
+        $('#img').attr('src', base64);
+        $('#Product_Img').val(name + '|' + base64);
+    };
+
+    if (document.getElementById('file') != undefined) {
+        document.getElementById('file').addEventListener("change", (e) => {
+            uploadImage(e);
+        });
+    }
+
+    function convertFileToBase64(file) {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = () => resolve(reader.result);
+            reader.onerror = reject;
+        });
+    }
+</script>

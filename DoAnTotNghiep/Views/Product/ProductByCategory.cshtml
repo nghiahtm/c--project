@@ -1,0 +1,164 @@
+﻿
+@model List<DoAnTotNghiep.Models.Product>
+
+@{
+    ViewBag.Title = "ProductByCategory";
+    //Layout = "~/Views/Shared/_LayoutPageCategoryProduct.cshtml";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+
+}
+<section class="hero hero-normal">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="hero__categories">
+                    <div class="hero__categories__all">
+                        <i class="fa fa-bars"></i>
+                        <span>All departments</span>
+                    </div>
+                    <ul>
+                        @Html.Action("CategoryPartial", "Product")
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="hero__search">
+                    <div class="hero__search__form">
+                        <form action="#">
+                            <div class="hero__search__categories">
+                                All Categories
+                                <span class="arrow_carrot-down"></span>
+                            </div>
+                            <input type="text" placeholder="What do you need?">
+                            <button type="submit" class="site-btn">SEARCH</button>
+                        </form>
+                    </div>
+                    <div class="hero__search__phone">
+                        <div class="hero__search__phone__icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="hero__search__phone__text">
+                            <h5>+84 962601281</h5>
+                            <span>support 24/7 time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg" data-setbg="/Images/bannerctsp1.jpg" style="background-image: url(/Images/bannerctsp1.jpg);height:164px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>NB Garden Shop</h2>
+                    <div class="breadcrumb__option">
+                        <a href="./index.html">Home</a>
+                        <span>Product By Category</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+<!-- Product Section Begin -->
+<section class="product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-5">
+                <div class="sidebar">
+                    <div class="sidebar__item">
+                        <h4>Department</h4>
+                        <ul>
+                            @Html.Action("CategoryPartial", "Product")
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-7">
+                <div class="filter__item">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-5">
+                            <div class="filter__sort">
+                                <span>Sort By</span>
+                                <select>
+                                    <option value="0">A-Z</option>
+                                    <option value="0">Z-A</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="filter__found">
+                                <h6><span>@Model.Count</span> Products found</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    @foreach (var product in Model)
+                    {
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg">
+                                    <a href="@Url.Action("ProductDetail", "Product", new { @ID_Product = product.ID_Product })"><img src="@Url.Content("~/Images/" + product.Product_Img)" /></a>
+                                    <ul class="product__item__pic__hover">
+                                        <li><a onclick="addFavorites(@product.ID_Product)"><i class="fa fa-heart"></i></a></li>
+                                        <li><i class="fa fa-pencil-square"></i></li>
+                                        <li><a onclick="addShop(@product.ID_Product)"><i class="fa fa-shopping-cart" onclick="addProductToCategory(@product.ID_Product)"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">@product.Product_Name</a></h6>
+                                    <h5>$@product.Price</h5>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+    </div>
+</section>
+
+
+
+    <div class="product__pagination">
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <a href="@Url.Action("Shop", "Product", new { page = i })">@i</a>
+        }
+        <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+    </div>
+</div>
+<script src="~/Scripts/BaseScript/BaseScripts.js"></script>
+<div class="message-box" id="messageBox"></div>
+<style>
+    .message-box {
+        width: 20%;
+        height: 8%;
+        display: none;
+        position: fixed;
+        top: 10%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #7fad39;
+        z-index: 9999;
+        text-align: center
+    }
+
+    .success {
+        color: whitesmoke;
+    }
+
+    .error {
+        border-color: red;
+        color: red;
+    }
+</style>

@@ -1,0 +1,103 @@
+﻿@model List<DoAnTotNghiep.Models.DTO.OrderDTO>
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+}
+
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg" data-setbg="/Images/bannerctsp.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>Order</h2>
+                    <div class="breadcrumb__option">
+                        <a href="./index.html">Home</a>
+                        <span>Order</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="shoping-cart spad">
+    <div class="container">
+        <input id="StrProduct" hidden type="text" value="" />
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="shoping__cart__table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID_Order</th>
+                                <th>Date Order</th>
+                                <th>Total Money</th>
+                                <th>Status</th>
+                                <th>Payment Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        @foreach (var product in Model)
+                        {
+                            <tbody>
+                                <tr>
+                                    <td>@product.ID_Order</td>
+                                    <td>
+                                        @product.Date_Order.Value.ToString("dd/MM/yyyy")
+                                    </td>
+                                    <td>
+                                        $@product.Total_money
+                                    </td>
+                                    <td>
+                                       @(DoAnTotNghiep.Data.Constant.OrderStatusNameEng(product.Order_Status))
+                                    </td>
+                                    <td>
+                                        @(product.Payment_Status ? "Payment completed": "Not paid")
+                                    </td>
+                                    <td>
+                                        @if (product.Order_Status == (int)DoAnTotNghiep.Data.OrderStatus.Dang_Giao && product.Payment_Status)
+                                        {
+                                            <a href="@Url.Action("UpdateStatus", "Product", new {id = product.ID_Order, status = (int)DoAnTotNghiep.Data.OrderStatus.Da_Hoan_Thanh})">
+                                                Payment confirmed
+                                            </a>
+                                        }
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="message-box" id="messageBox"></div>
+</section>
+<script src="~/Scripts/BaseScript/BaseScripts.js"></script>
+<style>
+    .message-box {
+        width: 20%;
+        height: 8%;
+        display: none;
+        position: fixed;
+        top: 10%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #7fad39;
+        z-index: 9999;
+        text-align: center
+    }
+
+    .success {
+        color: whitesmoke;
+    }
+
+    .error {
+        border-color: red;
+        color: red;
+    }
+</style>
+<!-- Shoping Cart Section End -->

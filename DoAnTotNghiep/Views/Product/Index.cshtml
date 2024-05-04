@@ -1,0 +1,266 @@
+﻿@model PagedList.IPagedList<DoAnTotNghiep.Models.Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+}
+@using PagedList.Mvc;
+
+<div class="message-box" id="messageBox"></div>
+<script src="~/Scripts/BaseScript/BaseScripts.js"></script>
+<style>
+    .pagination li {
+        border-width: 20px;
+        margin-left: 50px;
+    }
+
+    .pagination {
+        margin-left: 367px;
+    }
+
+    .trang {
+        margin-left: 1075px;
+    }
+
+    .pagination li active a {
+        background-color: green;
+    }
+
+    .message-box {
+        width: 20%;
+        height: 8%;
+        display: none;
+        position: fixed;
+        top: 10%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #7fad39;
+        z-index: 9999;
+        text-align: center
+    }
+
+    .success {
+        color: whitesmoke;
+    }
+
+    .error {
+        border-color: red;
+        color: red;
+    }
+</style>
+
+
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="hero__categories">
+                    <div class="hero__categories__all">
+                        <i class="fa fa-bars"></i>
+                        <span>All Categories</span>
+                    </div>
+                    <ul>
+                        @Html.Action("CategoryPartial", "Product")
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="hero__search">
+                    <div class="hero__search__form">
+                        @using (Html.BeginForm("SearchResults", "Product", FormMethod.Post))
+                        {
+                            <div class="hero__search__categories">
+                                All Categories
+                                <span class="arrow_carrot-down"></span>
+                            </div>
+                            @Html.TextBox("txtsearch", "", htmlAttributes: new { placeholder = "What do you find" })
+
+                            <button type="submit" class="site-btn">SEARCH</button>
+                        }
+                    </div>
+                    <div class="hero__search__phone">
+                        <div class="hero__search__phone__icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="hero__search__phone__text">
+                            <h5>+84 962601281</h5>
+                            <span>support 24/7 time</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__item set-bg" data-setbg="/Asset/img/hero/banner4.jpg">
+                    <div class="hero__text">
+                        <h2 style=" font-style: italic;color: #FFFFFF; margin-bottom: 0px; margin-left: 20px ">Change this <br />to anything</h2>
+                        <a onclick="shop()" ;style="margin-bottom: 0px; margin-left: 20px" class="primary-btn" style="color:white">SHOP NOW</a>                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+<!-- Categories Section Begin -->
+<section class="categories">
+    <div class="container">
+        <div class="row">
+            <div class="categories__slider owl-carousel">
+                <div class="col-lg-3">
+                    <div class="categories__item set-bg" data-setbg="/Asset/img/categories/duoi-cong-soc-tim.jpg">
+                        <h5><a href="#">Tabletop plant</a></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="categories__item set-bg" data-setbg="/Asset/img/categories/cay-hoa-hong.jpg">
+                        <h5><a href="#">Flower</a></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="categories__item set-bg" data-setbg="/Asset/img/categories/cay-xuong-rong-trang-nguyen-bui.jpg">
+                        <h5><a href="#">Catus</a></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="categories__item set-bg" data-setbg="/Asset/img/categories/kim-ngan-tim.jpg">
+                        <h5><a href="#">Aquatic plant</a></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="categories__item set-bg" data-setbg="/Asset/img/categories/bang-singapore-ngoaitroi.jpg">
+                        <h5><a href="#">Outdoor plant</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Categories Section End -->
+<!-- Featured Section Begin -->
+<section class="featured spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>All Products</h2>
+                </div>
+                <div class="featured__controls">
+                    @*<ul>
+                        <li class="active" data-filter="*">All</li>
+
+                    </ul>*@
+                </div>
+            </div>
+        </div>
+        <div class="row featured__filter">
+            @{
+                foreach (var item in Model)
+                {
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg">
+                                <a href="@Url.Action("ProductDetail", "Product", new { @ID_Product = item.ID_Product })"><img src="@Url.Content("~/Images/" + item.Product_Img)" /></a>
+                                <ul class="featured__item__pic__hover">
+                                    <li><a onclick="addFavorites(@item.ID_Product)"><i class="fa fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                    <li><a onclick="addShop(@item.ID_Product)"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h4>@item.Product_Name</h4>
+                                <h5>$@item.Price </h5>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div>
+            <nav>
+                <ul class="pagination">
+                    <li class="active">@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))</li>
+                </ul>
+            </nav>
+        </div>
+        @*<div class="trang">Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount</div>*@
+    </div>
+</section>
+<!-- Featured Section End -->
+<!-- Banner Begin -->
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="banner__pic">
+                    <img src="~/Asset/img/banner/cay3.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-left:50px">
+                <div class="banner__pic">
+                    <img src="~/Asset/img/banner/cay4.jpg" alt="" style="width:620px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Blog Section Begin -->
+<section class="from-blog spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title from-blog__title">
+                    <h2>From The Blog</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="blog__item">
+                    <div class="blog__item__pic">
+                        <img src="~/Images/dac-diem-sinh-truong-cay-trau.jpg" alt="" style="width:100px; height:250px">
+                    </div>
+                    <div class="blog__item__text">
+                        <ul>
+                            <li><i class="fa fa-calendar-o"></i> 2024-02-11</li>
+                            <li><i class="fa fa-comment-o"></i> 5</li>
+                        </ul>
+                        <h5><a href="#">Growth characteristics, feng shui meaning and how to care for Philodendron erubescens 'gold' tree</a></h5>
+                        <p>The Betel Tree climbs a pole with a beautiful, eye-catching shape. It is a beautiful ornamental plant for office decoration that is very popular today. Let's learn with Viet Tree Garden about the growth characteristics, feng shui meaning and how to care for the climbing Betel Tree. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="blog__item">
+                    <div class="blog__item__pic">
+                        <img src="~/Images/11cayvanphong.jpg" alt="" style="width:100px; height:250px">
+                    </div>
+                    <div class="blog__item__text">
+                        <ul>
+                            <li><i class="fa fa-calendar-o"></i> 2024-02-12</li>
+                            <li><i class="fa fa-comment-o"></i> 5</li>
+                        </ul>
+                        <h5><a href="#">Top 11 most beautiful and easy-to-care-for office ornamental plants today</a></h5>
+                        <p>Employees' memory increases by 20% and concentration increases by 15% are the great benefits that office plants bring. Do you want to know that secret? The top list of the most beautiful office plants provided below will be all you need.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="blog__item">
+                    <div class="blog__item__pic">
+                        <img src="~/Images/179-cay-truc-bach-hop-chau-su.jpg" alt="" style="width:100px; height:250px">
+                    </div>
+                    <div class="blog__item__text">
+                        <ul>
+                            <li><i class="fa fa-calendar-o"></i> 2024-02-13</li>
+                            <li><i class="fa fa-comment-o"></i> 5</li>
+                        </ul>
+                        <h5><a href="#">Growth characteristics, feng shui meaning and how to care for Bach Hop Bambo </a></h5>
+                        <p>The Bach Hop Bamboo plant is one of the favorite choices of families for indoor decoration. This is a feng shui ornamental plant with a very good meaning </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog Section End -->

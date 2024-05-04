@@ -1,0 +1,108 @@
+﻿@using DoAnTotNghiep.Data
+@model PagedList.IPagedList<DoAnTotNghiep.Models.CategoryPost>
+@{
+    var filter = ViewData["Filter"] as DoAnTotNghiep.Data.Filter;
+}
+
+<div style="padding: 40px">
+    <div class="row">
+        <div class="col-md-6">
+            <h4 class="fw-bold pb-3 mb-4"><span class="text-muted fw-light">Article Categories /</span> List of Article Categories</h4>
+        </div>
+        <div class="col-md-6 ">
+            @*<div class="flex-row justify-content-end" style="display: flex">
+                    <a class="btn btn-primary" style="margin-right: 10px" href="@Url.Action("Create")">Thêm mới</a>
+                </div>*@
+        </div>
+    </div>
+    <div class="card">
+        <form id="form" class="m-3">
+            @Html.HiddenFor(m => filter.PageIndex)
+            @Html.HiddenFor(m => filter.PageSize)
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Từ khóa</label>
+                    @Html.TextBoxFor(m => filter.Keyword, new { @class = "form-control", @placeholder = "Enter keyword: category name", @type = "text" })
+                </div>
+                <div class="col-md-2" style="display: flex; flex-direction: column;justify-content: end;">
+                    <span class="input-group mb-0">
+                        <button type="submit" class="btn btn-info mb-0"><i class="fa fa-search"></i> Search</button>
+                    </span>
+                </div>
+            </div>
+        </form>
+        <div class="table-responsive text-nowrap">
+            <table class="table table-striped table-bordered mb-3">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Article Categories</th>
+                        <th>Function</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int stt = (Model.PageNumber - 1) * Model.PageSize + 1;
+                    }
+                    @if (Model.Count() > 0)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@stt</td>
+                                <td>@item.CategoryP</td>
+                                <td>
+                                    <a class="btn btn-warning" href="@Url.Action("Edit", new { id = item.ID_CategoryP })">Edit</a>
+                                    <a class="btn btn-danger" href="@Url.Action("Delete", new { id = item.ID_CategoryP })">Delete</a>
+                                </td>
+                            </tr>
+                            stt++;
+                        }
+                    }
+
+                </tbody>
+            </table>
+
+            <div class="d-flex flex-row justify-content-end p-2">
+                @if (Model.Count() > 0)
+                {
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                            <li class="page-item @(Model.PageNumber == 1 ? "disabled" : "")">
+                                <a class="page-link" onclick="toPage(1)" style="cursor: pointer">Head</a>
+                            </li>
+                            <li class="page-item @(Model.PageNumber == 1 ? "disabled" : "")">
+                                <a class="page-link" onclick="toPage(@(Model.PageNumber - 1))" style="cursor: pointer">Backward</a>
+                            </li>
+                            @if (Model.Count() > 0)
+                            {
+                                for (int i = 1; i <= Model.PageCount; i++)
+                                {
+                                    <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                                        <a class="page-link" onclick="toPage(@i)" style="cursor: pointer">@i</a>
+                                    </li>
+                                }
+                            }
+                            <li class="page-item @(Model.PageNumber == Model.PageCount ? "disabled" : "")">
+                                <a class="page-link" onclick="toPage(@(Model.PageNumber + 1))" style="cursor: pointer">Next</a>
+                            </li>
+                            <li class="page-item @(Model.PageNumber == Model.PageCount ? "disabled" : "")">
+                                <a class="page-link" onclick="toPage(@(Model.PageCount))" style="cursor: pointer">End</a>
+                            </li>
+                        </ul>
+                    </nav>
+                }
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5" />
+
+</div>
+
+<script>
+    function toPage(index) {
+        $("#filter_PageIndex").val(index)
+        $("#form").submit()
+    }
+</script>

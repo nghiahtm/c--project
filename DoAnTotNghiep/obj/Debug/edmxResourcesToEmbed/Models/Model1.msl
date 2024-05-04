@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLBanCayCanhModelStoreContainer" CdmEntityContainer="QLBanCayCanhEntities">
+    <EntitySetMapping Name="Carts">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.Cart">
+        <MappingFragment StoreEntitySet="Cart">
+          <ScalarProperty Name="ID_Cart" ColumnName="ID_Cart" />
+          <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="ID_Category" ColumnName="ID_Category" />
+          <ScalarProperty Name="Category1" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryPosts">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.CategoryPost">
+        <MappingFragment StoreEntitySet="CategoryPost">
+          <ScalarProperty Name="ID_CategoryP" ColumnName="ID_CategoryP" />
+          <ScalarProperty Name="CategoryP" ColumnName="CategoryP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Favorites">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.Favorite">
+        <MappingFragment StoreEntitySet="Favorites">
+          <ScalarProperty Name="ID_Favorite" ColumnName="ID_Favorite" />
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lastests">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.Lastest">
+        <MappingFragment StoreEntitySet="Lastest">
+          <ScalarProperty Name="ID_Lastest" ColumnName="ID_Lastest" />
+          <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="Date_Create" ColumnName="Date_Create" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_detail">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.Order_detail">
+        <MappingFragment StoreEntitySet="Order_detail">
+          <ScalarProperty Name="ID_Order_detail" ColumnName="ID_Order_detail" />
+          <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+          <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="Total_money" ColumnName="Total_money" />
+          <ScalarProperty Name="payment_method" ColumnName="payment_method" />
+          <ScalarProperty Name="Shipping_fee" ColumnName="Shipping_fee" />
+          <ScalarProperty Name="Payment_Status" ColumnName="Payment_Status" />
+          <ScalarProperty Name="Order_Status" ColumnName="Order_Status" />
+          <ScalarProperty Name="Date_Order" ColumnName="Date_Order" />
+          <ScalarProperty Name="Date_Payment" ColumnName="Date_Payment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posts">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.Post">
+        <MappingFragment StoreEntitySet="Post">
+          <ScalarProperty Name="ID_Post" ColumnName="ID_Post" />
+          <ScalarProperty Name="Post_Name" ColumnName="Post_Name" />
+          <ScalarProperty Name="Post_Summary" ColumnName="Post_Summary" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Post_image" ColumnName="Post_image" />
+          <ScalarProperty Name="Date_post" ColumnName="Date_post" />
+          <ScalarProperty Name="ID_CategoryP" ColumnName="ID_CategoryP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Product_Img" ColumnName="Product_Img" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Sort_desc" ColumnName="Sort_desc" />
+          <ScalarProperty Name="Characteristic" ColumnName="Characteristic" />
+          <ScalarProperty Name="Meaning" ColumnName="Meaning" />
+          <ScalarProperty Name="Care_tips" ColumnName="Care_tips" />
+          <ScalarProperty Name="ID_Category" ColumnName="ID_Category" />
+          <ScalarProperty Name="Common_Name" ColumnName="Common_Name" />
+          <ScalarProperty Name="Scientific_Name" ColumnName="Scientific_Name" />
+          <ScalarProperty Name="Plant_family" ColumnName="Plant_family" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reviews">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.Review">
+        <MappingFragment StoreEntitySet="Review">
+          <ScalarProperty Name="ID_Review" ColumnName="ID_Review" />
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Date_R" ColumnName="Date_R" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="ID_Role" ColumnName="ID_Role" />
+          <ScalarProperty Name="Role_Name" ColumnName="Role_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role_Def">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.Role_Def">
+        <MappingFragment StoreEntitySet="Role_Def">
+          <ScalarProperty Name="ID_Role" ColumnName="ID_Role" />
+          <ScalarProperty Name="Role_Name" ColumnName="Role_Name" />
+          <ScalarProperty Name="ID_RoleGroup" ColumnName="ID_RoleGroup" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="role_group">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.role_group">
+        <MappingFragment StoreEntitySet="role_group">
+          <ScalarProperty Name="role_group_id" ColumnName="role_group_id" />
+          <ScalarProperty Name="role_group_name" ColumnName="role_group_name" />
+          <ScalarProperty Name="role_description" ColumnName="role_description" />
+          <ScalarProperty Name="ID_Role" ColumnName="ID_Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Userrs">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.Userr">
+        <MappingFragment StoreEntitySet="Userr">
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="User_Address" ColumnName="User_Address" />
+          <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+          <ScalarProperty Name="ID_Role" ColumnName="ID_Role" />
+          <ScalarProperty Name="Role_Group_Id" ColumnName="Role_Group_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="QLBanCayCanhModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="Updated_by" ColumnName="Updated_by" />
+          <ScalarProperty Name="Updated_at" ColumnName="Updated_at" />
+          <ScalarProperty Name="Created_at" ColumnName="Created_at" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Reply" ColumnName="Reply" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="Messagee" ColumnName="Messagee" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="ID_Contact" ColumnName="ID_Contact" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
